@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  roommanagementdb:
+    container_name: roommanagementdb
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: roommanagementdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: roomrentalmanagementsystem
+
+    security:
+      user:
+        name: raksa
+        password: raksa
+
+  datasource:
+    url: jdbc:mysql://localhost:5432/roomrentalmanagement
+    username: postgres
+    password: postgres
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: updates
+    show-sql: true
